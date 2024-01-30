@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+      :root {
+        --default-font: 'Poppins', sans-serif;
+      }
+
+      *
+      html{
+        font-family: var(--default-font);
+      }
+      a{
+        text-decoration: none;
+      }
+
+      /* HEADER STYLES */
+      header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+
+      .brand{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .brand span{
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
