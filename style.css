@@ -2,22 +2,23 @@
 
       :root {
         --default-font: 'Poppins', sans-serif;
+        --primary-color:#0066ff;
+        --hero-bg-color: #EBF2FF;
       }
 
-      *
-      html{
+      *{
         font-family: var(--default-font);
       }
       a{
         text-decoration: none;
       }
-
       /* HEADER STYLES */
       header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 1rem 4.9rem;
+        background-color: var(--hero-bg-color);
       }
 
       .brand{
@@ -28,4 +29,28 @@
       .brand span{
         font-weight: 700;
         font-size: 1.5rem;
+      }
+      button{
+        border-radius: 25px;
+        border: none;
+        padding: 1rem 2rem;
+      }
+      .button-primary{
+        background-color:var(--primary-color);
+        color: white;
+      }
+      nav{
+        display: flex;
+        gap: 1rem;
+      }
+      .logo-text{
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+      /* herostyles */
+      .hero__top{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem 5rem;
+        background-color: var(--hero-bg-color);
       }
